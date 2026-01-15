@@ -14,7 +14,8 @@ SnakeGraphic.prototype.init = function() {
 };
 
 /**
- * Reset the board
+ * Reset the board 
+ * I change nothing in here, just redraw the margin and reset the old snake
  */
 SnakeGraphic.prototype.reset = function() {
   //draw the margin
