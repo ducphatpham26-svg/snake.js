@@ -27,7 +27,7 @@ function Game(canvasId) {
 }
 
 Game.prototype.start = function() {
-  setInterval(this.update, 10, this);
+  setInterval(this.update, 100, this);
 };
 
 Game.prototype.generateRandomApple = function() {
