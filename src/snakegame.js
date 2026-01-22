@@ -8,7 +8,7 @@ function Game(canvasId) {
   });
   this.snake = new Snake(this.field);
   this.generateRandomApple();
-  this.score = 0;
+  this.score = 10000;
   self.graphic.setScore(self.score);
 
   var ctx = this;
