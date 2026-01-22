@@ -27,7 +27,7 @@ function Game(canvasId) {
 }
 
 Game.prototype.start = function() {
-  setInterval(this.update, 100, this);
+  setInterval(this.update, 10, this);
 };
 
 Game.prototype.generateRandomApple = function() {
@@ -69,7 +69,7 @@ Game.prototype.update = function(self) {
   if (self.snake.isOn(self.apple)) {
     self.snake.grow();
     self.generateRandomApple();
-    self.score += 100;
+    self.score += 1000;
     self.graphic.setScore(self.score);
   }
   self.graphic.draw(self.snake.get());
