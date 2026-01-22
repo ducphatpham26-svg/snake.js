@@ -1,5 +1,5 @@
 function Game(canvasId) {
-  this.field = { x: 20, y: 20 };
+  this.field = { x: 100, y: 100 };
   this.blockSize = { x: 20, y: 20 };
   this.graphic = new SnakeGraphic(canvasId, this.field, this.blockSize, 100);
   var self = this;
