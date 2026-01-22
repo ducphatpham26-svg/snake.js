@@ -84,7 +84,7 @@ Snake.prototype.checkDeath = function() {
  */
 Snake.prototype.respawn = function() {
   this.alive = true;
-  this.size = 100;
+  this.size = 5;
   this.direction = getRandomDirection();
   this.snake = [
     {
