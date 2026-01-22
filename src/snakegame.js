@@ -1,5 +1,5 @@
 function Game(canvasId) {
-  this.field = { x: 50, y: 50 };
+  this.field = { x: 40, y: 40 };
   this.blockSize = { x: 20, y: 20 };
   this.graphic = new SnakeGraphic(canvasId, this.field, this.blockSize, 100);
   var self = this;
@@ -8,7 +8,7 @@ function Game(canvasId) {
   });
   this.snake = new Snake(this.field);
   this.generateRandomApple();
-  this.score = 1000;
+  this.score = 0;
   self.graphic.setScore(self.score);
 
   var ctx = this;
@@ -27,7 +27,7 @@ function Game(canvasId) {
 }
 
 Game.prototype.start = function() {
-  setInterval(this.update, 100, this);
+  setInterval(this.update, 500, this);
 };
 
 Game.prototype.generateRandomApple = function() {
