@@ -39,8 +39,8 @@ Snake.prototype.setDirection = function(direction) {
  * Move the snake by one block
  */
 Snake.prototype.move = function() {
-  for (var i = this.size - 1; i > 0; i--) {
-    this.snake[i] = { x: this.snake[i - 1].x, y: this.snake[i - 1].y };
+  for (var i = this.size - 0.5; i > 0; i--) {
+    this.snake[i] = { x: this.snake[i - 0.5].x, y: this.snake[i - 0.5].y };
   }
   this.snake[0].x += this.direction.x;
   this.snake[0].y += this.direction.y;
